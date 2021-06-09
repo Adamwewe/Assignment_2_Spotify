@@ -1,0 +1,81 @@
+---
+title: "Assignment_2_Spotify"
+author: "Adam Mehdi Arafan"
+date: "9-6-2021"
+output: html_document
+---
+
+Tasks:
+tab 1: --> Chieling 
+ plot 1: 2*interactive elements --> EDA plot at the beginning
+ 
+ 
+tab 2: --> Victoria
+ plot 2: 2*interactive elements --> result plot --> show which one is the best + reactive component for final output
+ 
+ 
+
+Step 4: 2: interactive elements: choosing regression model + error/performance metric
+
+ - Model building/evaluation <- Adam
+ - Popularity and investigate it with loudness, BPM, Polynomials, etc...
+ Make method comparison interactive: step-wise, lasso, ridge
+ 
+
+
+
+
+UI:
+
+ - Backend:
+ - Frontend:
+ 
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+library(shiny)
+library(tidyverse)
+```
+
+
+```{r}
+df <- read.csv('./Spotify-2000.csv')
+```
+
+
+```{r}
+df %>% str()
+df %>% is.na() %>% sum()
+``` 
+
+
+```{r}
+
+```
+
+
+
+
+
+
+```{r}
+ggplot() +
+  geom_histogram(data = df, mapping = aes(x = Loudness..dB. ), alpha = 0.5, colour = "Red") 
+
+
+```
+Why no -9???
+
+
+
+
+
